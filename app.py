@@ -462,7 +462,7 @@ if form_submitted:
             render_steps(st.session_state.pipeline_status)
             
         if "rate_limit" in str(e) or "429" in str(e):
-            st.error("Model is busy or rate-limited. Please try again in a minute.")
+            st.error("Model is busy or rate-limited. Please try again later.")
         else:
             st.error(f"Pipeline Execution Blocked at [{current_running_node.upper()}]: {str(e)}")
         st.stop()
