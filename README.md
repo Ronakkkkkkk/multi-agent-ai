@@ -108,7 +108,7 @@ DataBrief/
 ├── pipeline.py           # Research pipeline execution
 ├── tools.py              # Search and scraping tools
 ├── requirements.txt
-├── .gitignore
+├── .env
 └── README.md
 ```
 
